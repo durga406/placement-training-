@@ -1,5 +1,4 @@
 import sys
-
 def solve():
     t_str = input("Enter number of test cases (t): ")
      out = []
