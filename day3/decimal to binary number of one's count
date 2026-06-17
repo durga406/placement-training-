@@ -1,0 +1,8 @@
+n=int(input())
+binary_str=bin(n)[2:]
+c=binary_str.count('1')
+print(c)
+if c==0:
+    print("Invalid")
+else:
+    print("No one's decimal count")
