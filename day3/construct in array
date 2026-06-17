@@ -12,6 +12,7 @@ def func():
                 e.append(i)
         for i in range(0,n):
             print(e[i],end= " ")
-    --t
+        print()
+        t-=1
 func()
              
