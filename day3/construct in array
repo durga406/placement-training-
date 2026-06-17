@@ -1,0 +1,17 @@
+import random
+def func():
+    t=int(input())
+    while t>0:
+        n=int(input())
+        e=[]
+        l=[]
+        for i in range(1,2*n+1):
+            l.append(i)
+        for i in l:
+            if i%2!=0:
+                e.append(i)
+        for i in range(0,n):
+            print(e[i],end= " ")
+    --t
+func()
+             
