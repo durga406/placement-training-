@@ -1,0 +1,20 @@
+N=int(input())
+p=[]
+d=[]
+for i in range(N):
+    p.append(int(input()))
+    d.append(int(input()))
+tank=0
+start_index=0
+deficit=0
+for i in range(N):
+    net=p[i]-d[i]
+    tank+=net
+    if tank<0:
+        start_index=i+1
+        deficit+=tank
+        tank=0
+if tank+deficit>=0:
+    print(start_index)
+else:
+    print(-1)
