@@ -1,8 +1,7 @@
 S = input().lower()
-S = S.replace("eraser", "")
-S = S.replace("erase", "")
-S = S.replace("dreamer", "")
-S = S.replace("dream", "")
+words_list = ["eraser", "erase", "dreamer", "dream"]
+for word in words_list:
+    S = S.replace(word, "")
 if S == "":
     print("YES")
 else:
