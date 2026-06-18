@@ -1,16 +1,12 @@
 N, M = map(int, input().split())
 A = list(map(int, input().split()))
-
 operations = []
 for i in range(M):
     B, C = map(int, input().split())
     operations.append([C, B])
-
 A.sort()
 operations.sort(reverse=True)
-
 card_index = 0
-
 for C, B in operations:
     for count in range(B):
         if card_index < N and A[card_index] < C:
@@ -18,5 +14,4 @@ for C, B in operations:
             card_index += 1
         else:
             break
-
 print(sum(A))
