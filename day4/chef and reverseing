@@ -4,18 +4,17 @@ for i in range(t):
     a,b=[],[]
     for j in range(n):
         s = input()
-        # if direction is Left 
         if s[7]==" ":
-            a.append("Right on ")  # on that street chef must travel right
-            b.append(s[8:])   # street name 
+            a.append("Right on ") 
+            b.append(s[8:]) 
         else:
-            if s[0]!="B":              # if direction is Right
-                a.append("Left on ")  # on that street chef must travel left
+            if s[0]!="B":
+                a.append("Left on ")  
             else:
-                a.append(s[:9]) # if direction is Begin
-            b.append(s[9:])  # street name
-    b = b[::-1]  # chef need to travel all streets in reverse order 
-    a[1:] = a[1:][::-1] # except begin all need to be reversed
+                a.append(s[:9]) 
+            b.append(s[9:]) 
+    b = b[::-1]  
+    a[1:] = a[1:][::-1] 
     for k in range(n):
-        print(a[k]+b[k]) # final order to travel by chef
+        print(a[k]+b[k]) 
         
