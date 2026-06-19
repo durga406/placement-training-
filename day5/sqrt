@@ -1,0 +1,5 @@
+class Solution:
+    def mySqrt(self,x):
+        p=int(x**0.5)
+        return p
+        
